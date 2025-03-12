@@ -153,6 +153,7 @@ def main():
                     (
                         audience_plot_data
                         .query('variable == "observed_action"')
+                        .query('outcome_type == "nbrx"')
                     ),
                     x='timestep',
                     y='value',
